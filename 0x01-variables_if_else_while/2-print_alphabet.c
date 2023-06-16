@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: print all alphabets letters
+ * Description: prints the alphabet in lowercase, followed by a new line
  *
  * Return : 0 (success)
 */
@@ -15,6 +15,6 @@ int main(void)
 		putchar(ch);
 	}
 	putchar('\n');
-
+	ch++;
 	return (0);
 }
