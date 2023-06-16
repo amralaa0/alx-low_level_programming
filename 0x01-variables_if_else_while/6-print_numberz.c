@@ -3,19 +3,19 @@
 /**
  * main - Entry point
  *
- * Description:
+ * Description: Print 0-9 using putchar while using int variable
  *
  * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	char ch = 'a';
+	int digit = 0;
 
-	while (ch <= 'z')
+	while (digit <= 9)
 	{
-		putchar(ch);
-		ch++;
+		putchar(digit + '0');
+		digit++;
 	}
 	putchar('\n');
 

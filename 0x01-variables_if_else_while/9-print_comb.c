@@ -10,14 +10,19 @@
 
 int main(void)
 {
-	char ch = 'a';
+	int digit = 0;
 
-	while (ch <= 'z')
+	while (digit <= 9)
 	{
-		putchar(ch);
-		ch++;
+		putchar(digit + 48);
+
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		digit++;
 	}
 	putchar('\n');
-
 	return (0);
 }
