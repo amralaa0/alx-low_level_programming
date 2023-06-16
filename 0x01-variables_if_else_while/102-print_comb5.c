@@ -11,31 +11,32 @@
 int main(void)
 {
 	int firstDigit = 0;
-	int secondDigit;
+	int seconDigit;
 
-while (firstDigit <= 99)
-{
-	secondDigit = firstDigit;
-if (secondDigit != firstDigit)
-{
-putchar((firstDigit / 10) + 48);
-putchar((firstDigit % 10) + 48);
-putchar(' ');
-putchar((secondDigit / 10) + 48);
-putchar((secondDigit % 10) + 48);
+	while (firstDigit <= 99)
+	{
+		seconDigit = firstDigit;
+		while (seconDigit <= 99)
+		{
+			if (seconDigit != firstDigit)
+			{
+				putchar((firstDigit / 10) + 48);
+				putchar((firstDigit % 10) + 48);
+				putchar(' ');
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
 
-if (firstDigit != 98 || secondDigit != 99)
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-secondDigit++;
-}
-firstdigit++;
-}
-putchar('\n');
+				if (firstDigit != 98 || seconDigit != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			seconDigit++;
+		}
+		firstDigit++;
+	}
+	putchar('\n');
 
-return (0);
+	return (0);
 }
