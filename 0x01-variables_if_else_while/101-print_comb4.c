@@ -29,7 +29,7 @@ putchar(digit3 + 48);
 if (digit1 + digit2 + digit3 != 24)
 {
 putchar(',');
-putchar('');
+putchar(' ');
 }
 }
 digit3++;
