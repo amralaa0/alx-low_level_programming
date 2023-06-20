@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
 */
 
-int numlength(int num)
+int numLength(int num)
 {
 	int length = 0;
 
