@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * numLength - returns the length of string
  *
- * Describtion:
+ * @n: operand number
  *
- * Return: Always 0 (Success)
+ * Return: number of digit
 */
 
 int numLength(int num)
@@ -21,6 +21,14 @@ int numLength(int num)
 	}
 	return (length);
 }
+
+/**
+ * main - Entry point
+ *
+ * Describtion:
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
