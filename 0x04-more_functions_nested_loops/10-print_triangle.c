@@ -18,11 +18,14 @@ void print_triangle(int size)
 	{
 		for (hght = 1; hght <= size; hght++)
 		{
-			if ((hght + base) <= size)
-				_putchar(' ');
-			else
-				_putchar('#');
+			for (base = 1; base <= size; base++)
+			{
+				if ((hght + base) <= size)
+					_putchar(' ');
+				else
+					_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
