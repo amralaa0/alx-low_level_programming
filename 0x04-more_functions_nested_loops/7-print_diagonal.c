@@ -12,6 +12,7 @@ void print_diagonal(int n)
 	int postn, space;
 
 	if (n <= 0)
+		_putchar(36);
 		_putchar('\n');
 	else
 	{
