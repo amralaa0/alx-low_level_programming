@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * islower - destermines whether ascii is lowercase
  * @c: character
  * Return: 1 if true, 0 if false
-*/
+
 
 int islower(char c)
 {
