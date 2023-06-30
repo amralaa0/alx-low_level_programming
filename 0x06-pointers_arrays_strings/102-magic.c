@@ -1,31 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description:
- *
- * Return: 0 (Success)
+ * leet - function that encodes a string into 1337
+ * @str: character to be checked
+ * Return: if seperator return 1. Otherwise return 0;
 */
-
-int main(void)
+char *leet(char *str)
 {
-	int n;
-	int a[5];
-	int *p;
+	int count = 0, i = 0;
+	char *letters = "aeotlAEOTL";
+	char *nums = "4307143071";
 
-	a[2] = 1024;
-	p = &n;
-	/*
-	 * write your line of code here...
-	 * Remember:
-	 * - you are not allowed to use a
-	 * - you are not allowed to modify p
-	 * - only one statement
-	 * - you are not allowed to code anything else than this line of code
-	 */
-	*(p + 5) = 98;
-	/* ...so that this prints 98\n */
-	printf("a[2] = %d\n", a[2]);
-	return (0);
+	while (str[count] != '\0')
+	{
+		i = 0;
+		while (letters[i] != '\0')
+		{
+			if (str[count] == letters[i])
+				str[count] = nums[i];
+			i++;
+		}
+		count++;
+	}
+
+	return (str);
 }
